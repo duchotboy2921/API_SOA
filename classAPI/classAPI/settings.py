@@ -84,7 +84,7 @@ WSGI_APPLICATION = 'classAPI.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
+        'ENGINE': 'django.db.backends.postgresql',
         'NAME': 'ClassDB',
         'USER': 'postgres',
         'PASSWORD': 'duc292120',

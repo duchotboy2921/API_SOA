@@ -6,4 +6,4 @@ from main.models import Class
 class ClassSerialiser(serializers.HyperlinkedModelSerializer):
     class Meta:
                 model = Class
-                fields = ('id', 'code', 'name', 'teacher', 'slot_number')
+                fields = ('id', 'code','name','credit_class','total_slot','remain_slot','period','day_of_week','classroom','teacher')

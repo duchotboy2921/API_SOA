@@ -4,5 +4,5 @@ from main.models import Class
 
 @admin.register(Class)
 class Class(admin.ModelAdmin):
-    list_display = ["id","code","name","teacher","slot_number"]
+    list_display = ["code","name","credit_class","total_slot","remain_slot","period","day_of_week","classroom","teacher"]
     admin.register(Class)

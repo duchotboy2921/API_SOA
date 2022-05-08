@@ -18,9 +18,10 @@ from django.contrib import admin
 from django.db import router
 from django.urls import path
 
-from main.api.viewset import getClass
+from main.api.viewset import getClass,initData
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/listclass/<str:code>/',getClass, name='getClass')
+    path('api/listclass/<str:code>/',getClass, name='getClass'),
+    path('initdata/',initData, name = 'initData')
 ]
